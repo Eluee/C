@@ -15,12 +15,11 @@ int main(void)
 {
     struct value a, b, r;
     int test;
-    printf("ì²«ë²ˆì§¸ ë³µì†Œìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(a, b):");
-    scanf("%d", &test);
-    // scanf("%lf%lf", &a.natural, &a.complex);
-    //  printf("ë‘ë²ˆì§¸ ë³µì†Œìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(a, b):");
-    //   scanf("%lf %lf", &b.natural, &b.complex);
-    //    r = add_complex(a, b);
-    //    printf("%.1lf + %.1lfi", r.natural, r.complex);
+    printf("Ã¹¹øÂ° Çã¼ö°ªÀ»ÀÔ·ÂÇÏ½Ã¿À.(a, b):");
+	scanf("%lf%lf", &a.natural, &a.complex);
+    printf("µÎ¹øÂ° Çã¼ö °ªÀ» ÀÔ·ÂÇÏ½Ã¿À.(a, b):");
+    scanf("%lf%lf", &b.natural, &b.complex);
+    r = add_complex(a, b); 
+    printf("%.1lf + %.1lfi", r.natural, r.complex);
     return 0;
 }
